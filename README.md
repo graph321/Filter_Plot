@@ -3,7 +3,7 @@
 # Effective Spectral Response
 
 ## Figure
-![Figure](figure.png)
+![Figure](Filter.png)
 
 ## Explanation
 
