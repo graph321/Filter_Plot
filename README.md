@@ -30,18 +30,18 @@ where the normalized graph Laplacian is:
 
 Because the normalized Laplacian has spectrum in `[0, 2]`, the effective frequencies also lie in `[0, 2]`.
 
-## Top Row
+## Top Row (a,d,g)
 
 The top row plots:
 - x-axis: effective Laplacian frequency
 - y-axis: learned channel gain
 
 The dashed black curve shows the learned hierarchical gain.
-The blue and red curves are idealized low-frequency and high-frequency reference profiles used only for qualitative comparison.
+The blue and red curves are idealized low-frequency and high-frequency reference profiles (calculated via eigendecomposition of the given Laplacian) and are  for qualitative comparison.
 
-This panel shows whether the learned response behaves more like a low-pass filter, a high-pass filter, or a mixed band-selective filter.
+This panel indicates whether the learned response behaves more like a low-pass, high-pass, or band-selective filter.
 
-## Low- and High-Frequency Components
+## Low- and High-Frequency Components (second row and third row)
 
 The channels are split into low-frequency and high-frequency groups using a threshold `tau`:
 
@@ -70,6 +70,6 @@ These panels show how smoother and more oscillatory components are distributed a
 
 ## Interpretation
 
-Overall, the figure shows that although the proposed model is not learned directly in the Laplacian eigenbasis, its channels can still be interpreted relative to Laplacian-defined frequencies through the effective frequency mapping. The top row shows the effective spectral response, while the lower rows show how low- and high-frequency components are distributed across nodes
+Overall, the figure shows that although the proposed model is not learned directly in the Laplacian eigenbasis, its channels can be  interpreted in terms of Laplacian-defined frequencies via the effective frequency mapping. The top row shows the effective spectral response, while the lower rows show how low- and high-frequency components are distributed across nodes
 
 These panels show how smoother and more oscillatory components are distributed across nodes.
