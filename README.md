@@ -70,9 +70,14 @@ where `H_low(i,:)` and `H_high(i,:)` are the filtered feature vectors at node `i
 These panels show how smoother and more oscillatory components are distributed across the graph.
 
 ## Interpretation
-**Table 1.** Performance on standard long-range benchmark datasets. **Peptides-func** is a graph classification task evaluated by **Average Precision (AP)**, and **Peptides-struct** is a graph regression task evaluated by **Mean Absolute Error (MAE)**. Higher AP is better; lower MAE is better.
+Overall, the figure shows that although the proposed model is not learned directly in the Laplacian eigenbasis, its channels can be  interpreted in terms of Laplacian-defined frequencies via the effective frequency mapping. The top row shows the effective spectral response, while the lower rows show how low- and high-frequency components are distributed across nodes
+
+These panels show how smoother and more oscillatory components are distributed across nodes.
 
 ##Key Question 2 Answer. Long Range Benchmark.
+**Table 1.** Performance on standard long-range benchmark datasets. **Peptides-func** is a graph classification task evaluated by **Average Precision (AP)**, and **Peptides-struct** is a graph regression task evaluated by **Mean Absolute Error (MAE)**. Higher AP is better; lower MAE is better.
+
+
 | Model | Peptides-func (Test AP ↑) | Peptides-struct (Test MAE ↓) |
 |---|---:|---:|
 | GCN | 0.5930 ± 0.0023 | 0.3496 ± 0.0013 |
@@ -83,6 +88,4 @@ These panels show how smoother and more oscillatory components are distributed a
 | **HMH (ours)** | **0.622 ± 0.115** | **0.235 ± 0.0023** |
 
 
-Overall, the figure shows that although the proposed model is not learned directly in the Laplacian eigenbasis, its channels can be  interpreted in terms of Laplacian-defined frequencies via the effective frequency mapping. The top row shows the effective spectral response, while the lower rows show how low- and high-frequency components are distributed across nodes
 
-These panels show how smoother and more oscillatory components are distributed across nodes.
