@@ -70,7 +70,7 @@ These panels show how smoother and more oscillatory components are distributed a
 
 ## Interpretation
 **Table 1.** Performance on standard long-range benchmark datasets. **Peptides-func** is a graph classification task evaluated by **Average Precision (AP)**, and **Peptides-struct** is a graph regression task evaluated by **Mean Absolute Error (MAE)**. Higher AP is better; lower MAE is better.
-
+## Long Range Benchmark.
 | Model | Peptides-func (Test AP ↑) | Peptides-struct (Test MAE ↓) |
 |---|---:|---:|
 | GCN | 0.5930 ± 0.0023 | 0.3496 ± 0.0013 |
