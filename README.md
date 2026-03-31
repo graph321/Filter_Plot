@@ -69,6 +69,17 @@ where `H_low(i,:)` and `H_high(i,:)` are the filtered feature vectors at node `i
 These panels show how smoother and more oscillatory components are distributed across the graph.
 
 ## Interpretation
+**Table 1.** Performance on standard long-range benchmark datasets. **Peptides-func** is a graph classification task evaluated by **Average Precision (AP)**, and **Peptides-struct** is a graph regression task evaluated by **Mean Absolute Error (MAE)**. Higher AP is better; lower MAE is better.
+
+| Model | Peptides-func (Test AP ↑) | Peptides-struct (Test MAE ↓) |
+|---|---:|---:|
+| GCN | 0.5930 ± 0.0023 | 0.3496 ± 0.0013 |
+| GCNII | 0.5543 ± 0.0078 | 0.3471 ± 0.0010 |
+| GINE | 0.5498 ± 0.0079 | 0.3547 ± 0.0045 |
+| GatedGCN | 0.5864 ± 0.0077 | 0.3420 ± 0.0013 |
+| Transformer+LapPE | 0.6326 ± 0.0126 | 0.2529 ± 0.0016 |
+| **HMH (ours)** | **0.622 ± 0.115** | **0.235 ± 0.0023** |
+
 
 Overall, the figure shows that although the proposed model is not learned directly in the Laplacian eigenbasis, its channels can be  interpreted in terms of Laplacian-defined frequencies via the effective frequency mapping. The top row shows the effective spectral response, while the lower rows show how low- and high-frequency components are distributed across nodes
 
